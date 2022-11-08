@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grading</title>
+</head>
+<body>
+    <form action="">
+
+        <span>computational statistics &nbsp;</span> 
+        <select id="1">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br>
+        <br>
+        <span>dbms &nbsp;</span> 
+        <select id="2">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br><br>
+        
+        <span>operating systems &nbsp;</span> 
+        <select id="3">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br><br>
+        <span>software engineering &nbsp;</span> 
+        <select id="4">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br><br>
+        <span>web technologies &nbsp;</span> 
+        <select id="5">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br><br>
+        <span>computational statistics lab &nbsp;</span> 
+        <select id="6">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br><br>
+        <span>database management lab &nbsp;</span> 
+        <select id="7">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br><br>
+        <span>web technologies lab &nbsp;</span> 
+        <select id="8">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br><br>
+        <span>skill oriented course &nbsp;</span> 
+        <select id="9">
+            <option value="10">A+</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+        </select>
+        <br>
+        <br>
+
+        <input type="submit" onclick="fun()">
+    </form>
+
+    <script>
+
+        function fun()
+        {
+                var sum=0;
+                for(var i=1;i<=5;i++)
+                {
+                    var x=document.getElementById(i).value*3;
+                    sum+=x;
+                }
+                for(var i=6;i<=8;i++)
+                {
+                    var x=document.getElementById(i).value*1.5;
+                    sum+=x;
+                }
+                var x=document.getElementById(9).value*2;
+                    sum+=x;
+                sum=sum/21.5;
+                window.alert(sum.toFixed(2));
+        }
+
+
+    </script>
+</body>
+</html>
